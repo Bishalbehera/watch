@@ -1,0 +1,38 @@
+#clockcontainer {
+    background-color: aqua;
+    height: 42vw;
+    width: 42vw;
+    background: url(img/watch.jpg) no-repeat center center;
+    background-size: contain;
+    border: 2px solid red;
+    margin: auto;
+    position: relative; 
+}
+
+#hour, #minute, #second {
+    position: absolute;
+    background: black;
+    border-radius: 10px;
+    transform-origin: bottom center; 
+    left: 50%; 
+    bottom: 50%; 
+    transform: translate(-50%, 100%) rotate(0deg); 
+}
+
+#hour {
+    height: 18%; 
+    width: 1%;
+}
+
+#minute {
+    height: 25%; 
+    width: 0.6%;
+    opacity: 0.8;
+}
+
+#second {
+    height: 30%; 
+    width: 0.2%;
+    background: red;
+    opacity: 0.8;
+}
